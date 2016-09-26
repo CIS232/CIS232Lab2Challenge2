@@ -20,7 +20,7 @@ public class Lab02Challenge2 {
         System.out.println("Enter the Shift Supervisor's Yearly Bonus.");
         String bonus = keyboard.nextLine();
         ShiftSupervisor sh = new ShiftSupervisor(Name, employeeNumber,hireDate,annualSalary,bonus); 
-        
+        keyboard.close();
         
         System.out.printf("The Shift Supervisor is %s and their Employee number is %s.\nTheir hire date was %s.\nThey have an annual salary of %,.2f and a yearly bonus of %,.2f \n", 
                 sh.getEmployeeName(),sh.getEmployeeNumber(),sh.getHireDate(),sh.getAnnualSalary(),sh.getBonus());
